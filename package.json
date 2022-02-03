@@ -3,5 +3,37 @@
   "version": "1.0.0",
   "main": "index.ts",
   "author": "ESK711 <ero@crescent.africa>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec ts-node --files server",
+    "gen-schema-types": "ts-node --files server/scripts/createTypes.ts"
+  },
+  "dependencies": {
+    "@gql2ts/from-schema": "*",
+    "apollo-server-express": "*",
+    "dotenv": "*",
+    "express": "*",
+    "graphql": "*",
+    "graphql-import": "*",
+    "graphql-tools": "*",
+    "nodemailer": "*",
+    "reflect-metadata": "*",
+    "type-graphql": "*",
+    "zone.js": "*"
+  },
+  "devDependencies": {
+    "@graphql-tools/load": "*",
+    "@graphql-tools/load-files": "*",
+    "@graphql-tools/utils": "*",
+    "@types/express": "*",
+    "@types/graphql": "*",
+    "@types/node": "*",
+    "@types/nodemailer": "*",
+    "gql2ts": "*",
+    "nodemon": "*",
+    "ts-node": "*",
+    "tslint": "*",
+    "tslint-config-prettier": "*",
+    "typescript": "*"
+  }
 }

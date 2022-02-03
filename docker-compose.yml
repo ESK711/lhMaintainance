@@ -1,0 +1,12 @@
+services: 
+  app:
+    image: appName
+    container_name: containerName
+    working_dir: /usr/app
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+    tty: true
