@@ -1,6 +1,6 @@
 services: 
   app:
-    image: appName
+    image: app_name
     container_name: containerName
     working_dir: /usr/app
     restart: unless-stopped
