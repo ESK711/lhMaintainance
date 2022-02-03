@@ -1,0 +1,8 @@
+/frontend
+/node_module
+/dist
+
+
+/.env
+/yarn.lock
+/yarn-error.logs

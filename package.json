@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "ESK711 <ero@crescent.africa>",
+  "license": "MIT"
+}
