@@ -2,7 +2,6 @@
 /node_modules
 /dist
 
-/.dockerignore
 /.env
 /yarn.lock
 /yarn-error.logs
