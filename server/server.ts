@@ -25,9 +25,7 @@ export async function runServer() {
 
   app.use(cors({
     origin: '*',
-    credentials: true,
-    methods: ['PUT', 'POST', 'GET', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Content-Length', 'Authorization', 'Accept', 'X-Requested-With', 'x-access-token']
+    credentials: true
   }))
 
   await apolloServer.start()
