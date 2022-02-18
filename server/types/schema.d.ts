@@ -23,6 +23,8 @@ column: number;
 interface IMutation {
 __typename: "Mutation";
 contact: boolean;
+subscribe: boolean;
+quote: boolean;
 }
 
 interface IContactOnMutationArguments {
@@ -31,6 +33,17 @@ lastName: string;
 email: string;
 phoneNumber: number;
 message: string;
+}
+
+interface ISubscribeOnMutationArguments {
+email: string;
+}
+
+interface IQuoteOnMutationArguments {
+firstName: string;
+lastName: string;
+email: string;
+phoneNumber: number;
 }
 
 interface IQuery {
