@@ -4,17 +4,17 @@ import * as session from 'express-session'
 // import * as connectRedis from 'connect-redis'
 import { ApolloServer } from 'apollo-server-express'
 
-// import * as cors from 'cors'
-// import * as express from 'express'
+import * as cors from 'cors'
+import * as express from 'express'
 
-import { frontend } from '../dist/ssr/main'
+// import { frontend } from '../dist/ssr/main'
 import { genSchema } from './utils/genSchema'
 // import { redis } from './utils/redis'
 
 export async function runServer() {
   dotenv.config()
 
-  const app = frontend()
+  const app = express()
   const httpServer = http.createServer(app)
   // const RedisStore = connectRedis(session)
   const port = process.env.PORT || 8000
@@ -27,10 +27,10 @@ export async function runServer() {
 
   app.disable('x-powered-by')
 
-  // app.use(cors({
-    // origin: '*',
-    // credentials: true
-  // }))
+  app.use(cors({
+    origin: '*',
+    credentials: true
+  }))
 
   // app.set('trust proxy', 1) // trust first proxy
   app.use(
