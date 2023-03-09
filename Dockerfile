@@ -14,5 +14,5 @@ COPY . .
 
 COPY .env .
 
-EXPOSE 8001
+EXPOSE 8060
 CMD ["yarn", "start"] 

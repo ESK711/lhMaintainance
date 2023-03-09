@@ -1,12 +1,12 @@
 services: 
   app:
-    image: app_name
-    container_name: containerName
+    image: liadihome
+    container_name: liadiHome
     working_dir: /usr/app
     restart: unless-stopped
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8001:8000"
+      - "8060:8060"
     tty: true
