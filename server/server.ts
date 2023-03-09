@@ -1,9 +1,8 @@
 import * as http from 'http'
 import * as dotenv from 'dotenv'
-import * as express from 'express'
 import { ApolloServer } from 'apollo-server-express'
 
-// import { frontend } from '../dist/ssr/main'
+import { frontend } from '../dist/ssr/main'
 import { genSchema } from './utils/genSchema'
 
 export async function startServer() {
@@ -13,9 +12,9 @@ export async function startServer() {
   let displayError: any
   async function stop(arg0: any) {}
 
-  const app = express()
+  const app = frontend()
   const httpServer = http.createServer(app)
-  const port = process.env.PORT || 8001
+  const port = process.env.PORT || 8060
   const host = process.env.HOST
 
   const apolloServer = new ApolloServer({

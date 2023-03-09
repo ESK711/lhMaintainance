@@ -1,6 +1,5 @@
 /frontend
 /node_modules
-/dist
 
 /.env
 /yarn.lock
